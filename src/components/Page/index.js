@@ -1,9 +1,9 @@
 import React from 'react';
 import PageContent from '../PageContent';
 import About from '../About';
-import Project from '../Project';
 import Contact from '../Contact';
 import Resume from '../Resume';
+import Portfolio from '../Portfolio';
 
 function Page(props) {
    const {currentPage} = props;
@@ -15,18 +15,22 @@ function Page(props) {
             return <Contact />
          case 'resume':
             return <Resume />
-         case 'project':
-            return <Project />
+         case 'portfolio':
+            return <Portfolio />
          default:
             return <About />
       }
    };
    return (
-      <div>
-         <h2>{currentPage.name}</h2>
+     <div className="container">
+       <div className="row">
+         <h2 className="col-2">{currentPage.name}</h2>
+       </div>
+       <section>
          <PageContent>{renderPage()}</PageContent>
-      </div>
-   )
+       </section>
+     </div>
+   );
 }
 
 export default Page;

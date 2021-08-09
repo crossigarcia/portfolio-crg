@@ -8,13 +8,14 @@ import Nav from './components/Nav';
 
 function App() {
   const [pages] = useState([
-    {name: 'about'},
-    {name: 'project'},
-    {name: 'contact'},
-    {name: 'resume'}
+    {name: 'about', id: 1},
+    {name: 'portfolio', id: 2},
+    {name: 'contact', id: 3},
+    {name: 'resume', id: 4}
   ])
 
   const [currentPage, setCurrentPage] = useState(pages[0])
+
   return (
     <>
       <Header>

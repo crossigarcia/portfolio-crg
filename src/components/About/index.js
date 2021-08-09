@@ -3,12 +3,12 @@ import self from '../../assets/imgs/cecilia.jpg';
 
 function About() {
    return (
-     <section className="container">
-       <div className="row">
-         <div className="col-1">
-            <img src={self} alt="" width="300" height="300"></img>
+    
+       <div className="row justify-content-center about-me">
+         <div className="col-sm-12 col-md-4 col-lg-3 about-img">
+            <img src={self} alt="portrait of me" className="portrait" ></img>
          </div>
-         <div className="col-9">
+         <div className="col-sm-12 col-md-8 col-lg-9">
            <p>
              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -20,7 +20,6 @@ function About() {
            </p>
          </div>
        </div>
-     </section>
    );
 }
 
