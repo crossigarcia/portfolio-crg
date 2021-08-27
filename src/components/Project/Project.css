@@ -1,6 +1,6 @@
 .project-image {
   width: 100%;
-  border: 3px solid var(--periwinkle);
+  border: 3px solid var(--dark);
   margin-top: 20px;
 }
 
@@ -18,7 +18,7 @@
   width: 93%;
   opacity: 0;
   transition: .3s ease;
-  background-color: var(--periwinkle);
+  background-color: var(--dark);
   margin: 10px;
   padding: 10px;
   box-shadow: 12px 12px 2px 1px rgba(104, 112, 176, .5);
@@ -29,14 +29,14 @@
 }
 
 .overlay-info {
-  color: var(--lightperi);
+  color: var(--light);
   text-align: center;
   margin: 10px;
   font-size: 20px;
 }
 
 .overlay-info a {
-  color: var(--gold);
+  color: var(--kiwi);
   margin-top: 20px;
   padding: 0;
   font-size: 18px;

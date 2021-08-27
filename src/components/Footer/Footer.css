@@ -2,7 +2,7 @@ footer {
   margin-top: 30px;
   margin-bottom: 0;
   padding: 10px;
-  background-color: rgba(104, 112, 176, 1);
-  color: var(--lightperi);
+  background-color: var(--dark);
+  color: var(--kiwi);
   font-size: 15px;
 }

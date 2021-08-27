@@ -1,6 +1,6 @@
-nav {
+/* nav {
   margin-bottom: 35px;
-  background-color: var(--periwinkle);
+  background-color: var(--dark);
 }
 
 .navbar-brand {
@@ -10,23 +10,23 @@ nav {
 }
 
 .navbar-brand a {
-  color: var(--lightperi);
+  color: var(--kiwi);
 }
 
 .navbar-brand a:hover {
-  color: var(--gold);
+  color: var(--kiwi);
 }
 
 .nav-link {
   font-size: 18px;
-  color: var(--lightperi);
+  color: var(--light);
   margin-right: 20px;
   text-align: center;
 }
 
 .current-page {
   color: var(--periwinkle);
-  background-color: var(--lightperi);
+  background-color: var(--light);
   border-radius: 30px;
   padding: 5px;
 }
@@ -36,7 +36,13 @@ nav {
 }
 
 .navbar-toggler {
-  border-color: var(--lightperi);
-  background-color: var(--periwinkle);
+  border-color: var(--light);
+  background-color: var(--kiwi);
   padding: 1px;
 }
+
+h1 {
+  font-family: acier-bat-noir,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} */
