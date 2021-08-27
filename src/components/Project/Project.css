@@ -1,0 +1,47 @@
+.project-image {
+  width: 100%;
+  border: 3px solid var(--periwinkle);
+  margin-top: 20px;
+}
+
+.project-tile {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 10px;
+  bottom: 0;
+  left: 5px;
+  right: 0;
+  height: 90%;
+  width: 93%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: var(--periwinkle);
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 12px 12px 2px 1px rgba(104, 112, 176, .5);
+}
+
+.project-tile:hover .overlay {
+  opacity: 1;
+}
+
+.overlay-info {
+  color: var(--lightperi);
+  text-align: center;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.overlay-info a {
+  color: var(--gold);
+  margin-top: 20px;
+  padding: 0;
+  font-size: 18px;
+}
+
+.overlay-info a:hover {
+  text-decoration: underline;
+}

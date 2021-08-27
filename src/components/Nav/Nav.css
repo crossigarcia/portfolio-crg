@@ -1,0 +1,42 @@
+nav {
+  margin-bottom: 35px;
+  background-color: var(--periwinkle);
+}
+
+.navbar-brand {
+  font-size: 30px;
+  margin-right: 40px;
+  text-align: center;
+}
+
+.navbar-brand a {
+  color: var(--lightperi);
+}
+
+.navbar-brand a:hover {
+  color: var(--gold);
+}
+
+.nav-link {
+  font-size: 18px;
+  color: var(--lightperi);
+  margin-right: 20px;
+  text-align: center;
+}
+
+.current-page {
+  color: var(--periwinkle);
+  background-color: var(--lightperi);
+  border-radius: 30px;
+  padding: 5px;
+}
+
+.nav-link:hover {
+  color: var(--gold);
+}
+
+.navbar-toggler {
+  border-color: var(--lightperi);
+  background-color: var(--periwinkle);
+  padding: 1px;
+}

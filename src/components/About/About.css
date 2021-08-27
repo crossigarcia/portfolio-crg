@@ -1,0 +1,16 @@
+.about-me {
+  margin-top: 20px;
+  padding: 25px 0 25px 0;
+}
+
+.portrait {
+  border-radius: 100%;
+  width: 100%;
+  border: 3px solid var(--periwinkle);
+}
+
+.about-me p {
+  text-align: justify;
+  margin: 10px;
+  color: var(--lightperi);
+}

@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import './Project.css'
 
 function Project() {
    const [projects] = useState([

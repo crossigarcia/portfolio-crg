@@ -1,5 +1,6 @@
 import React from 'react';
 import self from '../../assets/imgs/cecilia.jpg';
+import './About.css'
 
 function About() {
    return (
