@@ -4,6 +4,8 @@ import About from '../About';
 import Contact from '../Contact';
 import Resume from '../Resume';
 import Portfolio from '../Portfolio';
+import { Container, Row, Col } from 'react-bootstrap';
+import './Page.css';
 
 function Page(props) {
    const {currentPage} = props;
@@ -22,14 +24,20 @@ function Page(props) {
       }
    };
    return (
-     <div className="container">
-       <div className="row">
-         <h2 className="col-2">{currentPage.name}</h2>
-       </div>
-       <section>
-         <PageContent>{renderPage()}</PageContent>
-       </section>
-     </div>
+     <Container>
+       <Row>
+         <Col xs={12} md={{span: 6, offset: 3}}>
+           <h2>{currentPage.name}</h2>
+         </Col>
+       </Row>
+       <Row>
+         <Col>
+           <section>
+             <PageContent>{renderPage()}</PageContent>
+           </section>
+         </Col>
+       </Row>
+     </Container>
    );
 }
 

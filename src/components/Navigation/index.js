@@ -7,28 +7,30 @@ import './Nav.css';
 function Navigation({ pages = [], setCurrentPage, currentPage }) {
   console.log('test');
   return (
-    <Navbar bg="light" expand="lg">
-      <Container>
-        <Navbar.Brand href="/">Cecilia Rossi-Garc&#237;a</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+    <Navbar expand="lg">
+      <Container fluid>
+        <Navbar.Brand href="/">
+          <span className="nav-title">Cecilia Rossi-Garc&#237;a</span>
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav">
+          <i class="fas fa-ellipsis-v fa-md"></i>
+        </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-              {pages.map((page) => (
-                <Nav.Item>
-                  <span
-                    className={
-                      currentPage.name === page.name
-                        ? "nav-link current-page"
-                        : "nav-link"
-                    }
-                    onClick={() => {
-                      setCurrentPage(page);
-                    }}
-                  >
-                    {page.name}
-                  </span>
-                </Nav.Item>
-              ))}
+            {pages.map((page) => (
+              <Nav.Item
+                className={
+                  currentPage.name === page.name
+                    ? "navlink-current-page"
+                    : "navlink"
+                }
+                onClick={() => {
+                  setCurrentPage(page);
+                }}
+              >
+                <span className="page-title">{page.name}</span>
+              </Nav.Item>
+            ))}
           </Nav>
         </Navbar.Collapse>
       </Container>

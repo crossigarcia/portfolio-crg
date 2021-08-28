@@ -1,48 +1,59 @@
-/* nav {
-  margin-bottom: 35px;
-  background-color: var(--dark);
+.navbar {
+background-color: rgba(150, 219, 148, .3);
+box-shadow: 0 5px 9px 1px rgba(95, 134, 95, 0.4);
+margin-bottom: 50px;
+padding: 10px;
 }
 
 .navbar-brand {
-  font-size: 30px;
-  margin-right: 40px;
-  text-align: center;
-}
-
-.navbar-brand a {
-  color: var(--kiwi);
-}
-
-.navbar-brand a:hover {
-  color: var(--kiwi);
-}
-
-.nav-link {
-  font-size: 18px;
-  color: var(--light);
-  margin-right: 20px;
-  text-align: center;
-}
-
-.current-page {
-  color: var(--periwinkle);
-  background-color: var(--light);
-  border-radius: 30px;
-  padding: 5px;
-}
-
-.nav-link:hover {
-  color: var(--gold);
-}
-
-.navbar-toggler {
-  border-color: var(--light);
-  background-color: var(--kiwi);
-  padding: 1px;
-}
-
-h1 {
   font-family: acier-bat-noir,sans-serif;
   font-weight: 400;
   font-style: normal;
-} */
+  font-size: 30px;
+  text-align: center;
+} 
+
+.nav-title {
+  color: var(--strawberry);
+}
+
+.navbar .navbar-nav .navlink {
+  color: var(--kiwi);
+  cursor: pointer;
+  margin: 15px;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.navbar .navbar-nav .navlink-current-page {
+  color: var(--strawberry);
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 20px;
+  margin: 15px;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+span.page-title:hover {
+  color: var(--strawberry);
+}
+
+.fa-ellipsis-v {
+  color: var(--kiwi);
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+@media (max-width: 750px) {
+  .navbar-brand {
+    font-size: 25px;
+  }
+}

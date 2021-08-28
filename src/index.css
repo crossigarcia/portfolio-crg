@@ -1,8 +1,8 @@
 :root {
   --strawberry: #EE6D89;
-  --kiwi: #96DB94;
+  --kiwi: #83b881;
   --light: #fffefe;
-  --dark: #2c151a;
+  --dark: #72192d;
 }
 
 body {
@@ -14,9 +14,7 @@ body {
 
 a {
   text-decoration: none;
-}
-
-h2 {
   color: var(--kiwi);
 }
+
 
