@@ -3,7 +3,6 @@ import {validateEmail} from '../../utils/helpers';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
 import './Contact.css';
 
 function Contact() {
@@ -47,10 +46,19 @@ function Contact() {
 
    return (
      <>
-      <Col xs={12} md={{span: 6, offset: 3}}>
-        <h4>email: cecilia.rossi.garcia@gmail.com // call: 510-292-9005</h4>
-      </Col>
        <Col xs={12} md={{ span: 6, offset: 3 }}>
+         <p>
+           <i class="fas fa-envelope-open-text fa-lg"></i>
+           <a href="mailto:cecilia.rossi.garcia@gmail.com">
+             cecilia.rossi.garcia@gmail.com
+           </a>
+         </p>
+         <p>
+           <i class="fas fa-mobile-alt fa-lg"></i>
+           <a href="tel:5102929005">510-292-9005</a>
+         </p>
+       </Col>
+       <Col xs={12} md={{ span: 8, offset: 2 }}>
          <Form onSubmit={handleSubmit}>
            <Form.Group className="mb-3">
              <Form.Label htmlFor="name">Name</Form.Label>
@@ -91,7 +99,7 @@ function Contact() {
            )}
 
            <Button type="submit" data-testid="submitBtn">
-             Submit
+             send
            </Button>
          </Form>
        </Col>

@@ -18,4 +18,8 @@ a {
   color: var(--kiwi);
 }
 
+a:hover {
+  color: var(--strawberry);
+}
+
 
