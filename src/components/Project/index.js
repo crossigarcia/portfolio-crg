@@ -1,8 +1,18 @@
 import React, {useState} from 'react';
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Card from 'react-bootstrap/Card';
 import './Project.css'
 
 function Project() {
    const [projects] = useState([
+     {
+       name: "The Kara-OK Corral",
+       imgName: "karaok.gif",
+       url: "http://the-kara-ok-corral.herokuapp.com/",
+       github: "https://github.com/costanza13/kara-ok-corral",
+     },
      {
        name: "The Goodvice Blog",
        imgName: "goodvice.gif",
@@ -24,26 +34,35 @@ function Project() {
    ]);
 
    return (
-     <div className="row justify-content-center">
-       {projects.map((project, i) => (
-         <div className="col-sm-12 col-md-6 col-lg-5 project-tile">
-           <img
-             src={require(`../../assets/imgs/${project.imgName}`).default}
-             alt={project.name}
-             key={i}
-             className="project-image"
-           />
-           <div className="overlay container-fluid">
-              <div className="overlay-info row">
-                 <h3 className="col-12">{project.name}</h3>
-                 <p>view app: <br></br><a href={project.url} target="_blank" rel="noreferrer" className="col-12">{project.url}</a> </p>
-                 <br></br>
-                 <p>questions: <a href={project.github} target="_blank" rel="noreferrer" className="col-12">github</a></p>
-              </div>
-           </div>
-         </div>
-       ))}
-     </div>
+     <Container>
+       <Row>
+         {projects.map((project, i) => (
+           <Col xs={12} md={4}>
+             <Card key={i}>
+               <Card.Img
+                 src={require(`../../assets/imgs/${project.imgName}`).default}
+                 alt={project.name}
+                 className="project-image"
+                 variant="top"
+               ></Card.Img>
+               <Card.ImgOverlay>
+                 <Card.Title>{project.name}</Card.Title>
+                 <Card.Text>
+                   <a href={project.url} target="_blank" rel="noreferrer">
+                     deployed app
+                   </a>
+                 </Card.Text>
+                 <Card.Text>
+                   <a href={project.github} target="_blank" rel="noreferrer">
+                     github repo
+                   </a>
+                 </Card.Text>
+               </Card.ImgOverlay>
+             </Card>
+           </Col>
+         ))}
+       </Row>
+     </Container>
    );
 }
 

@@ -30,12 +30,8 @@ function Page(props) {
            <h2>{currentPage.name}</h2>
          </Col>
        </Row>
-       <Row>
-         <Col>
-           <section>
-             <PageContent>{renderPage()}</PageContent>
-           </section>
-         </Col>
+       <Row> 
+          <PageContent>{renderPage()}</PageContent>
        </Row>
      </Container>
    );
