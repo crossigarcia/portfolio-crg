@@ -17,14 +17,20 @@
 .card-title {
   font-weight: bold;
   font-size: 30px;
+  margin-bottom: 30px;
 }
 
 .card-img-overlay a {
-  color: var(--light);
+  color: rgba(255, 254, 254, .6);
   font-size: 25px;
+  margin: 30px;
 }
 
 .card-img-overlay:hover {
   color: var(--light);
   background-color: rgba(238, 109, 137, .9);
+}
+
+.card-img-overlay a:hover {
+  color: var(--kiwi);
 }

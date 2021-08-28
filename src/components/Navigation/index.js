@@ -5,7 +5,6 @@ import Nav from 'react-bootstrap/Nav';
 import './Nav.css';
 
 function Navigation({ pages = [], setCurrentPage, currentPage }) {
-  console.log('test');
   return (
     <Navbar expand="lg">
       <Container fluid>
@@ -13,12 +12,13 @@ function Navigation({ pages = [], setCurrentPage, currentPage }) {
           <span className="nav-title">Cecilia Rossi-Garc&#237;a</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
-          <i class="fas fa-ellipsis-v fa-md"></i>
+          <i className="fas fa-ellipsis-v fa-md"></i>
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             {pages.map((page) => (
               <Nav.Item
+                key={page.id}
                 className={
                   currentPage.name === page.name
                     ? "navlink-current-page"

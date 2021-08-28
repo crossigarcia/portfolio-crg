@@ -49,12 +49,10 @@ function Project() {
                  <Card.Title>{project.name}</Card.Title>
                  <Card.Text>
                    <a href={project.url} target="_blank" rel="noreferrer">
-                     deployed app
+                     <i class="fas fa-external-link-alt fa-lg"></i>
                    </a>
-                 </Card.Text>
-                 <Card.Text>
                    <a href={project.github} target="_blank" rel="noreferrer">
-                     github repo
+                     <i class="fab fa-github fa-lg"></i>
                    </a>
                  </Card.Text>
                </Card.ImgOverlay>
