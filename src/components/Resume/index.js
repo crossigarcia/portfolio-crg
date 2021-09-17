@@ -31,14 +31,21 @@ function Resume() {
        <Row>
          <Col xs={12} md={{ span: 6, offset: 3 }}>
            <a
-             href="https://drive.google.com/file/d/1588OsXSbpIkiUf_Tq7IrQ3rwIgZgVvn6/view?usp=sharing"
+             href="https://drive.google.com/file/d/1M6eNjdu3FyS7O5ykK3ODy8LPTtT2hXrv/view?usp=sharing"
              target="_blank"
              rel="noreferrer"
            >
              <p className="resume-link">
-               <i class="fas fa-file-download fa-md"></i> my resume
+               <i class="fas fa-file-download fa-md"></i> download
              </p>
            </a>
+           {/* <embed
+             title={`Cecilia Rossi-Garcia's Resume`}
+             src="../../../assets/resume.pdf"
+             type="application/pdf"
+             width="100%"
+             height="600px"
+           /> */}
          </Col>
        </Row>
      </Container>
