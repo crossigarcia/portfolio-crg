@@ -8,7 +8,7 @@ function Navigation({ pages = [], setCurrentPage, currentPage }) {
   return (
     <Navbar expand="lg">
       <Container fluid>
-        <Navbar.Brand href="/">
+        <Navbar.Brand>
           <span className="nav-title">Cecilia Rossi-Garc&#237;a</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
